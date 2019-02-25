@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>alacritty</id>
+    <version>0.2.1</version>
+    <title>Alacritty</title>
+    <authors>Joe Wilm</authors>
+    <owners>Starz0r</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://raw.githubusercontent.com/jwilm/Alacritty/master/LICENSE-APACHE</licenseUrl>
+    <projectUrl>https://github.com/jwilm/alacritty</projectUrl>
+    <iconUrl>https://gist.githubusercontent.com/Starz0r/13dfbf8b1373144289617461e805c5cb/raw/3d093e40f84ce168008056e56a3d1624b676d4e6/alacritty.png</iconUrl>
+    <description>Alacritty
+=========
+
+[![Travis build Status](https://travis-ci.org/jwilm/alacritty.svg?branch=master)](https://travis-ci.org/jwilm/alacritty)
+[![Appveyor build Status](https://ci.appveyor.com/api/projects/status/github/jwilm/alacritty?svg=true)](https://ci.appveyor.com/project/jwilm/alacritty)
+
+Alacritty is the fastest terminal emulator in existence. Using the GPU for
+rendering enables optimizations that simply aren't possible in other emulators.
+Alacritty currently supports macOS and Linux, and Windows.
+
+## About
+
+Alacritty is focused on simplicity and performance. The performance goal means
+it should be faster than any other terminal emulator available. The simplicity
+goal means that it doesn't have features such as tabs or splits (which can be
+better provided by a window manager or [terminal multiplexer][tmux]) nor
+niceties like a GUI config editor.
+
+The software is considered to be at an **alpha** level of readiness--there are
+missing features and bugs to be fixed, but it is already used by many as a daily
+driver.
+
+Precompiled binaries are available for Windows through [appveyor](https://ci.appveyor.com/project/jwilm/alacritty).
+Precompiled binaries for other platforms are minimally blocked on a stable config format. For now, Alacritty must be
+built from source.
+
+## Further information
+
+- [Announcing Alacritty, a GPU-Accelerated Terminal Emulator](http://jwilm.io/blog/announcing-alacritty/) January 6, 2017
+- [A short talk about Alacritty at the Rust Meetup January 2017](https://air.mozilla.org/rust-meetup-january-2017/) (starts at 57:00)
+- [Alacritty Lands Scrollback, Publishes Benchmarks](https://jwilm.io/blog/alacritty-lands-scrollback/) September 17, 2018
+
+## Installation
+
+Some operating systems already provide binaries for Alacritty, for everyone else the instructions
+to build Alacritty from source, can be found [here](INSTALL.md).
+
+### Windows
+
+Prebuilt binaries can be downloaded from the artifacts section of [appveyor](https://ci.appveyor.com/project/jwilm/alacritty).
+
+## Configuration
+
+Although it's possible the default configuration would work on your system,
+you'll probably end up wanting to customize it anyhow. There is a default
+`alacritty.yml`, `alacritty_macos.yml`, and `alacritty_windows.yml` at the git repository root.
+Alacritty looks for the configuration file as the following paths:
+
+`%UserProfile%\alacritty.yml`
+
+Many configuration options will take effect immediately upon saving changes to
+the config file. The only exception is the `font` and `dimensions` sections
+which requires Alacritty to be restarted. For further explanation of the config
+file, please consult the comments in the default config file.
+
+## Issues (known, unknown, feature requests, etc)
+
+If you run into a problem with Alacritty, please file an issue. If you've got a
+feature request, feel free to ask about it. Keep in mind that Alacritty is very
+much not looking to be a feature-rich terminal emulator with all sorts of bells
+and widgets. It's primarily a cross-platform, blazing fast `tmux` renderer that
+Just Works.
+
+## FAQ
+
+**_Is it really the fastest terminal emulator?_**
+
+In the terminals I've benchmarked against, alacritty is either faster, WAY
+faster, or at least neutral. There are no benchmarks in which I've found
+Alacritty to be slower.
+
+**_My arrow keys don't work._**
+
+It sounds like you deleted some key bindings from your config file. Please
+reference the default config file to restore them.
+
+## IRC
+
+Alacritty discussion can be found in `#alacritty` on freenode.
+
+## License
+
+Alacritty is released under the [Apache License, Version 2.0].
+
+[Apache License, Version 2.0]: https://github.com/jwilm/alacritty/blob/master/LICENSE-APACHE
+[faq]: https://github.com/jwilm/alacritty#faq
+[tmux]: https://github.com/tmux/tmux</description>
+    <summary>A cross-platform, GPU-accelerated terminal emulator</summary>
+    <releaseNotes>https://github.com/jwilm/alacritty/releases</releaseNotes>
+    <copyright>Copyright (C) 2017 - 2018 Joe Wilm</copyright>
+    <tags>foss development cli shell bash powershell cmd posix unix linux gnu cygwin msys msys2 mingw graphical console emulator hardware gpu terminal admin</tags>
+  </metadata>
+</package>
