@@ -1,10 +1,10 @@
 $PackageName = 'alacritty'
-$Url64 = 'https://github.com/jwilm/alacritty/releases/download/v0.2.3/Alacritty-v0.2.3.exe'
-$Checksum64 = '0f04ccff7902c603590b33c3b921cd3ca450df6932b745f048bb33eb9eb5db1e777f705c11afce5ef32171448d17bc10da6a53cd119f87eec5729b51e0c6d18a'
+$Url64 = 'https://github.com/jwilm/alacritty/releases/download/v0.2.4/Alacritty-v0.2.4.exe'
+$Checksum64 = '23a0a23ca41a7c9e274cc5c081b6f5c8558e1d826b374bed001c05dbb964fb301eba73e45b39b43652d57216e96fa8560576d8ced8cd76faa9d66b3db4d7a4f8'
 $ChecksumType64 = 'sha512'
 $ToolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 $InstallDir = Join-Path $(Get-ToolsLocation) $PackageName
-$UrlExtra64 = 'https://github.com/jwilm/alacritty/releases/download/v0.2.3/winpty-agent.exe'
+$UrlExtra64 = 'https://github.com/jwilm/alacritty/releases/download/v0.2.4/winpty-agent.exe'
 
 $desktop = [System.Environment]::GetFolderPath("Desktop")
 
@@ -17,6 +17,7 @@ $PackageArgs = @{
 }
 Get-ChocolateyWebFile @PackageArgs
 
+Remove-Item $InstallDir\winpty-agent.exe
 $PackageArgs = @{
 	PackageName = $PackageName
 	Url64 = $UrlExtra64
