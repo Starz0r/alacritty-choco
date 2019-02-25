@@ -1,10 +1,10 @@
 $PackageName = 'alacritty'
-$Url64 = 'https://github.com/jwilm/alacritty/releases/download/v0.2.4/Alacritty-v0.2.4.exe'
-$Checksum64 = '23a0a23ca41a7c9e274cc5c081b6f5c8558e1d826b374bed001c05dbb964fb301eba73e45b39b43652d57216e96fa8560576d8ced8cd76faa9d66b3db4d7a4f8'
+$Url64 = 'https://github.com/jwilm/alacritty/releases/download/v0.2.5/Alacritty-v0.2.5.exe'
+$Checksum64 = 'c386b7a3442f4e2615d9a588d90fbf693b95c0ab720aa52ebb40b70c6e72405bc6e8186629220d010ab57f5272fdf87d8c047c1612c91445b34d6e78b7825ac2'
 $ChecksumType64 = 'sha512'
 $ToolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 $InstallDir = Join-Path $(Get-ToolsLocation) $PackageName
-$UrlExtra64 = 'https://github.com/jwilm/alacritty/releases/download/v0.2.4/winpty-agent.exe'
+$UrlExtra64 = 'https://github.com/jwilm/alacritty/releases/download/v0.2.5/winpty-agent.exe'
 
 $desktop = [System.Environment]::GetFolderPath("Desktop")
 
