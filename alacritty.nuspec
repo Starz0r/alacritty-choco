@@ -100,6 +100,9 @@ Alacritty is released under the [Apache License, Version 2.0].
 [tmux]: https://github.com/tmux/tmux</description>
     <summary>A cross-platform, GPU-accelerated terminal emulator</summary>
     <releaseNotes>https://github.com/jwilm/alacritty/releases</releaseNotes>
+    <dependencies>
+        <dependency id="vcredist140" version="14.16.27027.1" />
+    </dependencies> 
     <copyright>Copyright (C) 2017 - 2019 Joe Wilm</copyright>
     <tags>foss development cli shell bash powershell cmd posix unix linux gnu cygwin msys msys2 mingw graphical console emulator hardware gpu terminal admin</tags>
   </metadata>
