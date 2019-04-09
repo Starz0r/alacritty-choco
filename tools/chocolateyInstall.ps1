@@ -1,6 +1,6 @@
 $PackageName = 'alacritty'
-$Url64 = 'https://github.com/jwilm/alacritty/releases/download/v0.3.0-rc2/Alacritty-v0.3.0-rc2-windows-portable.zip'
-$Checksum64 = '045FE407827B6241C8BE788C8080B8CD8CBCFB1ED69925F91895C993D8A88F1D8B1F17706F32FB98FD82AABE3A7A59A20726AB392BA795615F7087B1E05618DA'
+$Url64 = 'https://github.com/jwilm/alacritty/releases/download/v0.3.0-rc3/Alacritty-v0.3.0-rc3-windows-portable.zip'
+$Checksum64 = 'FEDB19FAB5CD0E277DD6C7C3319809AA5AA6FA97FA88D10BD4E12D4967F86071CF0DE3619BED08EC63E1DFA9DDD5A3163348B2FA389665373776DC041A092A33'
 $ChecksumType64 = 'sha512'
 $ToolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 $InstallDir = Join-Path $(Get-ToolsLocation) $PackageName
