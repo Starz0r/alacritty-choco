@@ -237,7 +237,7 @@ Alacritty is released under the [Apache License, Version 2.0].
 [Apache License, Version 2.0]: https://github.com/alacritty/alacritty/blob/master/LICENSE-APACHE
 [tmux]: https://github.com/tmux/tmux</description>
     <summary>A cross-platform, GPU-accelerated terminal emulator</summary>
-    <releaseNotes>https://github.com/jwilm/alacritty/releases</releaseNotes>
+    <releaseNotes>https://github.com/alacritty/alacritty/releases</releaseNotes>
     <dependencies>
         <dependency id="vcredist140" version="14.20.27508.1" />
     </dependencies> 
