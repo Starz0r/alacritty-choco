@@ -7,9 +7,9 @@
     <authors>Joe Wilm</authors>
     <owners>Starz0r</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <licenseUrl>https://raw.githubusercontent.com/jwilm/Alacritty/master/LICENSE-APACHE</licenseUrl>
     <projectUrl>https://github.com/jwilm/alacritty</projectUrl>
 	<projectSourceUrl>https://github.com/jwilm/alacritty</projectSourceUrl>
+    <licenseUrl>https://github.com/alacritty/alacritty/blob/v0.4.1/LICENSE-APACHE</licenseUrl>
     <iconUrl>https://gist.githubusercontent.com/Starz0r/13dfbf8b1373144289617461e805c5cb/raw/3d093e40f84ce168008056e56a3d1624b676d4e6/alacritty.png</iconUrl>
 	<packageSourceUrl>https://github.com/Starz0r/alacritty-choco</packageSourceUrl>
     <description>Alacritty
