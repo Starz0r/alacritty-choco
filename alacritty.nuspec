@@ -31,8 +31,6 @@ The software is considered to be at a **beta** level of readiness -- there are
 a few missing features and bugs to be fixed, but it is already used by many as
 a daily driver.
 
-Precompiled binaries are available from the [GitHub releases page](https://github.com/alacritty/alacritty/releases).
-
 ## Further information
 
 - [Announcing Alacritty, a GPU-Accelerated Terminal Emulator](https://jwilm.io/blog/announcing-alacritty/) January 6, 2017
@@ -40,123 +38,12 @@ Precompiled binaries are available from the [GitHub releases page](https://githu
 - [Alacritty Lands Scrollback, Publishes Benchmarks](https://jwilm.io/blog/alacritty-lands-scrollback/) September 17, 2018
 - [Version 0.3.0 Release Announcement](https://blog.christianduerr.com/alacritty_030_announcement) April 07, 2019
 
-## Installation
-
-Some operating systems already provide binaries for Alacritty, for everyone
-else the instructions to build Alacritty from source can be found [here](INSTALL.md).
-
-### Arch Linux
-
-```sh
-pacman -S alacritty
-```
-
-### Fedora
-
-Unofficial builds of stable tags can be found in Fedora Copr:
-[pschyska/alacritty](https://copr.fedorainfracloud.org/coprs/pschyska/alacritty/).
-
-``` sh
-dnf copr enable pschyska/alacritty
-dnf install alacritty
-```
-
-If you want to help test pre-releases, you can additionally enable
-[pschyska/alacritty-testing](https://copr.fedorainfracloud.org/coprs/pschyska/alacritty-testing/).
-
-### Gentoo Linux
-
-```sh
-emerge x11-terms/alacritty
-```
-
-### Mageia
-
-```sh
-urpmi alacritty
-```
-
-### NixOS
-
-```sh
-nix-env -iA nixos.alacritty
-```
-
-### openSUSE Tumbleweed
-
-```sh
-zypper in alacritty
-```
-
-### Pop!\_OS / Ubuntu
-
-> If you're not running Pop!_OS, you'll have to add a third party repository first:
->
-> ```sh
-> add-apt-repository ppa:mmstick76/alacritty
-> ```
-
-```sh
-apt install alacritty
-```
-
-### Solus
-
-```sh
-eopkg install alacritty
-```
-
-### Void Linux
-
-```sh
-xbps-install alacritty
-```
-
-### FreeBSD
-
-```sh
-pkg install alacritty
-```
-
-### macOS
-
-```sh
-brew cask install alacritty
-```
-
-Once the cask is installed, it is recommended to setup the [manual page](INSTALL.md#manual-page),
-[shell completions](INSTALL.md#shell-completions), and [terminfo definitions](INSTALL.md#terminfo).
-
-### Windows
-
-#### Via [Chocolatey](https://chocolatey.org)
-
-```batch
-choco install alacritty
-```
-
-#### Via [Scoop](https://scoop.sh)
-
-```batch
-scoop bucket add extras
-scoop install alacritty
-```
-
-### Other
-
-Prebuilt binaries for Linux, macOS, and Windows can be downloaded from the
-[GitHub releases page](https://github.com/alacritty/alacritty/releases). If your
-desktop environment has trouble rendering the default SVG icons, you can find
-a prerendered SVG as well as simplified versions of the SVG in the
-`extra/logo/compat` directory.
-
 On Windows, Alacritty also requires Microsoft's VC++ redistributable.
 
 For Windows versions older than Windows 10 (October 2018 Update), Alacritty
 requires winpty to emulate UNIX's PTY API. The agent is a single binary
 (`winpty-agent.exe`) which **must** be in the same directory as the Alacritty
-executable and is available through the
-[GitHub releases page](https://github.com/alacritty/alacritty/releases).
+executable.
 
 ## Configuration
 
@@ -208,27 +95,9 @@ good fit for Alacritty. This means you won't find things like tabs or splits
 (which are best left to a window manager or [terminal multiplexer][tmux]) nor
 niceties like a GUI config editor.
 
-**_macOS + tmux + vim is slow! I thought this was supposed to be fast!_**
-
-This appears to be an issue outside of terminal emulators; either macOS has an
-IPC performance issue, or either tmux or vim (or both) have a bug. This same
-issue can be seen in `iTerm2` and `Terminal.app`. I've found that if tmux is
-running on another machine which is connected to Alacritty via SSH, this issue
-disappears. Actual throughput and rendering performance are still better in
-Alacritty.
-
 ## IRC
 
 Alacritty discussion can be found in `#alacritty` on freenode.
-
-## Wayland
-
-Wayland is used by default on systems that support it. Using XWayland may
-circumvent Wayland specific issues and can be enabled through:
-
-```sh
-env WINIT_UNIX_BACKEND=x11 alacritty
-```
 
 ## License
 
